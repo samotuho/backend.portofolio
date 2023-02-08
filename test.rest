@@ -1,0 +1,82 @@
+GET http://localhost:5000/contact
+
+###
+GET http://localhost:5000/contact/1
+
+
+###
+POST http://localhost:5000/contact
+Content-Type: application/json
+
+{
+    "original_name" : "Samotuho Ndruru",
+    "email_address" : "samotuhondruru@gmail.com",
+    "your_message" : "Hallo saya ingin menggunakan jasa anda"
+}
+
+###
+PATCH http://localhost:5000/contact/15
+Content-Type: application/json
+
+{
+    "original_name" : "Samotuho ",
+    "email_address" : "samotuho@gmail.com",
+    "your_message" : "Jasa pembuatan website"
+}
+
+###
+DELETE http://localhost:5000/contact/1
+Content-Type: application/json
+
+{
+    "original_name" : "Samotuho ",
+    "email_address" : "samotuho@gmail.com",
+    "your_message" : "Hallo"
+}
+
+
+
+###
+POST http://localhost:5000/about
+Content-Type: application/json
+
+{
+    "nama_lengkap" : "Samotuho Ndruru",
+    "tanggal_lahir" : "21 September 1999",
+    "alamat" : "Ndraso Maniamolo - Nias Selatan",
+    "email" : "samotuhondruru@gmail.com",
+    "No_hp_wa" : "081977861900"
+}
+###
+PATCH http://localhost:5000/about/1
+Content-Type: application/json
+
+{
+    "nama_lengkap" : "Samotuho",
+    "tanggal_lahir" : "21 September 1999",
+    "alamat" : "Ndraso Maniamolo - Nias Selatan",
+    "email" : "samotuhondruru@gmail.com",
+    "No_hp_wa" : "081977861900"
+}
+###
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+    "username":"samotuho",
+    "email":"samotuho@gmail.com",
+    "password":"123456",
+    "confirmPassword":"123456"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "username":"samotuho",
+    "password":"123456"
+}
+
+###
+GET http://localhost:5000/user
